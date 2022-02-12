@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="d-lg-flex justify-content-between mb-3">
+<div class="d-lg-flex justify-content-between mb-4 mb-lg-2">
     <div class="">
         <p class="mb-1 section-subtitle">
             <i class="fa-solid fa-lightbulb text-warning"></i>
@@ -24,30 +24,30 @@
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 mb-5">
     <div class="col">
-        <div class="card card-hover h-100">
+        <a href="{{ route('source.show') }}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <p class="card-text">This is a wider card card-hover with supporting text below as a natural lead-in to additional
                     content. This content is a little bit longer.</p>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col">
-        <div class="card card-hover h-100">
+        <a href="{{ route('source.show') }}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <p class="card-text">This card card-hover has supporting text below as a natural lead-in to additional content.</p>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col">
-        <div class="card card-hover h-100">
+        <a href="{{ route('source.show') }}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <p class="card-text">This is a wider card card-hover with supporting text below as a natural lead-in to additional
                     content. This card card-hover has even longer content than the first to show that equal height action.</p>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 
@@ -68,7 +68,7 @@
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
     <div class="col">
-        <div class="card card-hover h-100">
+        <a href="{{ route('source.show') }}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
@@ -76,10 +76,10 @@
             <div class="card-footer">
                 <small class="text-muted">Feb. 12, 2022</small>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col">
-        <div class="card card-hover h-100">
+        <a href="{{ route('source.show') }}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
@@ -87,10 +87,10 @@
             <div class="card-footer">
                 <small class="text-muted">Feb. 12, 2022</small>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col">
-        <div class="card card-hover h-100">
+        <a href="{{ route('source.show') }}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
@@ -98,10 +98,10 @@
             <div class="card-footer">
                 <small class="text-muted">Feb. 12, 2022</small>
             </div>
-        </div>
+        </a>
     </div>
     <div class="col">
-        <div class="card card-hover h-100">
+        <a href="{{ route('source.show') }}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
@@ -109,7 +109,7 @@
             <div class="card-footer">
                 <small class="text-muted">Feb. 12, 2022</small>
             </div>
-        </div>
+        </a>
     </div>
 </div>
 

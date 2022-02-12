@@ -19,3 +19,8 @@
 .card-hover:hover {
     top: -10px;
 }
+
+a.card {
+    text-decoration:none;
+    color:black;
+}
