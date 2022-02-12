@@ -9,7 +9,7 @@
     <body>
         @include('includes.navbar')
 
-        <main class="container mt-5">
+        <main class="container mt-5 pt-5">
             @yield('content')
 
         </main>
