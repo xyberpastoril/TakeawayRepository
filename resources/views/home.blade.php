@@ -15,7 +15,7 @@
         </p>
     </div>
     <div class="mt-3">
-        <a href="#" class="btn btn-outline-primary">
+        <a href="{{ route('source.show') }}" class="btn btn-outline-primary">
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
             Read Full Source
         </a>
