@@ -1,0 +1,21 @@
+.section-title-with-subtitle {
+    font-size: 24px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+}
+
+.section-title {
+    font-size: 28px;
+}
+
+.card-hover {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.card-hover:hover {
+    top: -10px;
+}
