@@ -21,6 +21,16 @@ class Tag extends Model
     public $timestamps = false;
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'source_id',
+        'name',
+    ];
+
+    /**
      * Get the source that owns the tag.
      */
     public function source()

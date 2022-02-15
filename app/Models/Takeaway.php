@@ -21,6 +21,17 @@ class Takeaway extends Model
     protected $keyType = 'string';
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'id',
+        'source_id',
+        'content',
+    ];
+
+    /**
      * Get the source that owns the takeaway.
      */
     public function source()
