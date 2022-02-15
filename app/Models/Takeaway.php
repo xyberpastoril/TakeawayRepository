@@ -33,6 +33,8 @@ class Takeaway extends Model
 
     /**
      * Get the source that owns the takeaway.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function source()
     {

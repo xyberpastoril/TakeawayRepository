@@ -32,6 +32,8 @@ class Tag extends Model
 
     /**
      * Get the source that owns the tag.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function source()
     {

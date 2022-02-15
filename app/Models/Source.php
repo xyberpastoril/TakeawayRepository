@@ -35,6 +35,8 @@ class Source extends Model
 
     /**
      * Get the takeaways for the single source.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function takeaways()
     {
@@ -43,6 +45,8 @@ class Source extends Model
 
     /**
      * Get the tags for the single source.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function tags()
     {
