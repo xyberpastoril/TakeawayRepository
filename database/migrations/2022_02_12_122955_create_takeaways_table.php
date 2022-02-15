@@ -14,8 +14,8 @@ class CreateTakeawaysTable extends Migration
     public function up()
     {
         Schema::create('takeaways', function (Blueprint $table) {
-            $table->id();
-            $table->integer('source_id');
+            $table->uuid('id')->unique()->primary();
+            $table->uuid('source_id');
             $table->text('content')->nullable();
             $table->timestamps();
             $table->softDeletes();
