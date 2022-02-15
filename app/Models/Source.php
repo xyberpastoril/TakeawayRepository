@@ -26,6 +26,7 @@ class Source extends Model
      * @var array
      */
     protected $fillable = [
+        'id',
         'user_id',
         'title',
         'reference_url',
