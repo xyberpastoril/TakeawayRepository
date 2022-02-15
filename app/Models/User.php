@@ -54,4 +54,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    /** 
+     * Get the sources the user owns.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function sources()
+    {
+        return $this->hasMany(Source::class);
+    }
 }

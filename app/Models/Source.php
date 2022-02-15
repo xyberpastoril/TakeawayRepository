@@ -47,4 +47,14 @@ class Source extends Model
     {
         return $this->hasMany(Tag::class);
     }
+
+    /** 
+     * Get the user that owns the source.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
