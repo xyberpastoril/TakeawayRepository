@@ -3,9 +3,12 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class InitialModelTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * Creates and Deletes User.
      *
