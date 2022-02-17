@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/source', function () {
     return view('source.show');
 })->name('source.show');
+
+Route::get('/settings', function () {
+    return view('settings.index');
+})->name('settings');

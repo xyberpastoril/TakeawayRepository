@@ -31,7 +31,7 @@
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0 order-2">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">
+                    <a class="nav-link" aria-current="page" href="{{ route('settings') }}">
                         <i class="fa-solid fa-gear"></i>
                         <b>Settings</b>
                     </a>
