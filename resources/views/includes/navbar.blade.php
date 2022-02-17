@@ -40,13 +40,13 @@
                 <li class="nav-item">
                     <a class="nav-link d-none d-lg-block" aria-current="page" href="{{ route('home') }}">
                         <i class="fa-solid fa-note-sticky"></i>
-                        <b>Repository</b>
+                        <b>My Repository</b>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-create-source">
                         <i class="fa-solid fa-plus"></i>
-                        <b>Create</b>
+                        <b>Create Source</b>
                     </a>
                 </li>
             </ul>
@@ -54,7 +54,7 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{{ route('settings') }}">
                         <i class="fa-solid fa-gear"></i>
-                        <b>Settings</b>
+                        <b>Account Settings</b>
                     </a>
                 </li>
                 <li class="nav-item">
