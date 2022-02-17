@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('home');
-Route::view('/source', 'source.show')->name('source.show');
-Route::view('/settings', 'settings.index')->name('settings');
+Auth::routes();
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::view('/', 'home')->name('home');
+    Route::view('/source', 'source.show')->name('source.show');
+    Route::view('/settings', 'settings.index')->name('settings');
+});
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
