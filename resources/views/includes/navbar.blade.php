@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{ route('home') }}">
+                    <a class="nav-link" aria-current="page" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modal-create-source">
                         <i class="fa-solid fa-plus"></i>
                         <b>Create</b>
                     </a>
