@@ -4,6 +4,27 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        @guest
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <div class="mt-3 mb-2 mb-lg-0 mt-lg-0 order-0">
+                <a class="navbar-brand d-none d-lg-block" href="{{ route('home') }}">TakeawayRepository</a>
+            </div>
+            <ul class="navbar-nav mb-2 mb-lg-0 order-1"></ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 order-2">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ route('login') }}">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                        <b>Login</b>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{ route('register') }}">
+                        <i class="fa-solid fa-user-plus"></i>
+                        <b>Register</b>
+                    </a>
+                </li>
+            </ul>
+        @else
         <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
             <div class="mt-3 mb-2 mb-lg-0 mt-lg-0 order-0 order-lg-1">
                 <form class="d-flex">
@@ -45,6 +66,7 @@
                 </li>
             </ul>
         </div>
+        @endguest
     </div>
 </nav>
 
