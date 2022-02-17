@@ -37,7 +37,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">
+                    <a class="nav-link" aria-current="page" href="javascript:void(0)" onclick="event.preventDefault();
+                    document.getElementById('form-logout').submit();">
                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                         <b>Logout</b>
                     </a>
@@ -46,3 +47,7 @@
         </div>
     </div>
 </nav>
+
+<form id="form-logout" action="{{ route('logout') }}" method="POST" class="d-none">
+    @csrf
+</form>
