@@ -15,8 +15,6 @@ class Takeaway extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'id',
-        'source_id',
         'content',
     ];
 

@@ -19,7 +19,6 @@ class Tag extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'source_id',
         'name',
     ];
 
