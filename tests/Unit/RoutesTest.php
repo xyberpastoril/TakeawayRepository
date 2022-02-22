@@ -17,7 +17,6 @@ class RoutesTest extends TestCase
     public function test_homepage_access()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
@@ -35,7 +34,6 @@ class RoutesTest extends TestCase
     public function test_source_page_access()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
@@ -54,7 +52,6 @@ class RoutesTest extends TestCase
     public function test_settings_page_access()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);

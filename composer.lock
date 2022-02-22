@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf14086919a839fe740e00554e4baff6",
+    "content-hash": "181e5534baf6ebb512e37086b656b3c9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -958,6 +958,54 @@
                 }
             ],
             "time": "2021-10-06T17:43:30+00:00"
+        },
+        {
+            "name": "jamesmills/eloquent-uuid",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jamesmills/eloquent-uuid.git",
+                "reference": "f39fe5b8e57c20e0653c81059d9ec81e461acd8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jamesmills/eloquent-uuid/zipball/f39fe5b8e57c20e0653c81059d9ec81e461acd8d",
+                "reference": "f39fe5b8e57c20e0653c81059d9ec81e461acd8d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.4.* || 5.5.* || 5.6.*|| 5.7.*|| 5.8.*|| ^6 || ^7 || ^8",
+                "php": ">=7.2.0",
+                "ramsey/uuid": "^4.1"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "JamesMills\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Mills",
+                    "email": "james@jamesmills.co.uk"
+                }
+            ],
+            "description": "A Laravel Eloquent Model trait for adding and using a uuid with models",
+            "keywords": [
+                "eloquent",
+                "laravel",
+                "uuid"
+            ],
+            "support": {
+                "issues": "https://github.com/jamesmills/eloquent-uuid/issues",
+                "source": "https://github.com/jamesmills/eloquent-uuid/tree/1.6.1"
+            },
+            "abandoned": "dyrynda/laravel-model-uuid",
+            "time": "2020-09-23T15:33:26+00:00"
         },
         {
             "name": "laravel/framework",
