@@ -30,7 +30,7 @@ Route::post('register', [\App\Http\Controllers\Auth\RegisterController::class, '
 
 Route::group(['middleware' => 'auth'], function() {
     Route::view('/', 'home')->name('home');
-    Route::view('/source', 'source.show')->name('source.show');
+    Route::resource('/source', \App\Http\Controllers\SourceController::class)->except('create', 'edit');
     Route::view('/settings', 'settings.index')->name('settings');
 });
 

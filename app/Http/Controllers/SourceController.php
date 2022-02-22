@@ -19,16 +19,6 @@ class SourceController extends Controller
     }
 
     /**
-     * Show the form for creating a new source.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created source in storage.
      *
      * @param  \App\Http\Requests\StoreSourceRequest  $request
@@ -46,17 +36,6 @@ class SourceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Source $source)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified source.
-     *
-     * @param  \App\Models\Source  $source
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Source $source)
     {
         //
     }
