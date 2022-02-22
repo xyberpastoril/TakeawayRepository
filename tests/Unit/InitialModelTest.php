@@ -17,7 +17,6 @@ class InitialModelTest extends TestCase
     public function test_create_user()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
@@ -33,13 +32,11 @@ class InitialModelTest extends TestCase
     public function test_create_source()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
 
         $user->sources()->create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'title' => 'Example Title',
             'reference_url' => 'https://google.com',
             'date' => '2022-02-15',
@@ -58,20 +55,17 @@ class InitialModelTest extends TestCase
     public function test_create_takeaway()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
 
         $user->sources()->create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'title' => 'Example Title',
             'reference_url' => 'https://google.com',
             'date' => '2022-02-15',
         ]);
 
         $user->sources[0]->takeaways()->create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'content' => 'This is an example takeaway.',
         ]);
 
@@ -86,13 +80,11 @@ class InitialModelTest extends TestCase
     public function test_create_tags()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
 
         $user->sources()->create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'title' => 'Example Title',
             'reference_url' => 'https://google.com',
             'date' => '2022-02-15',

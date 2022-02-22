@@ -3,22 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use JamesMills\Uuid\HasUuidTrait;
 
 class Takeaway extends Model
 {
-    /**
-     * Indicates if the model's ID is auto-incrementing.
-     *
-     * @var bool
-     */
-    public $incrementing = false;
-
-    /**
-     * The data type of the auto-incrementing ID.
-     *
-     * @var string
-     */
-    protected $keyType = 'string';
+    use HasUuidTrait;
 
     /**
      * The attributes that are mass assignable.

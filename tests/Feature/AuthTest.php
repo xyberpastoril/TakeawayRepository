@@ -99,7 +99,6 @@ class AuthTest extends TestCase
     public function test_login_user_with_non_existent_email()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
@@ -121,7 +120,6 @@ class AuthTest extends TestCase
     public function test_login_user_with_wrong_password()
     {
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
@@ -145,7 +143,6 @@ class AuthTest extends TestCase
         $this->assertGuest($guard = null);
 
         $user = \App\Models\User::create([
-            'id' => \Illuminate\Support\Str::uuid(),
             'email' => 'example@example.com',
             'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
