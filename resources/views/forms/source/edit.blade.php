@@ -6,7 +6,9 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form id="form-edit-source" action="" method="post">                    
+                <form id="form-edit-source" action="{{ route('source.update', $uuid) }}" method="post"> 
+                    @csrf
+                    @method('PUT')                   
                     <div class="row mb-3">
                         <label for="f-es-title" class="col-sm-3 col-form-label">Title</label>
                         <div class="col-sm-9">

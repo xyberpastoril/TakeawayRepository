@@ -72,7 +72,26 @@ class SourceController extends Controller
      */
     public function update(UpdateSourceRequest $request, Source $source)
     {
-        //
+        $validated = $request->validated();
+
+        $source->title = $validated['title'];
+        $source->reference_url = $validated['reference_url'];
+        $source->date = $validated['date'];
+        $source->save();
+
+        // Delete existing tags.
+        $source->tags()->delete();
+
+        // Add tags to a source
+        for($i = 0; $i < count($validated['tags']); $i++)
+        {
+            $tags[$i]['source_id'] = $source->id;
+            $tags[$i]['name'] = $validated['tags'][$i];
+        }
+
+        $source->tags()->insert($tags);    
+        
+        return redirect()->route('source.show', $source);
     }
 
     /**
