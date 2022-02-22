@@ -17,6 +17,15 @@ class StoreSourceRequest extends FormRequest
     }
 
     /**
+     * @inheritDoc
+     */
+    protected function prepareForValidation()
+    {
+        // Convert string with delimiter ',' to array
+        $this->merge(['tags' => explode(',', $this->tags)]);
+    }
+
+    /**
      * Get the validation rules that apply to the request.
      *
      * @return array
@@ -24,7 +33,10 @@ class StoreSourceRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => ['max:255'],
+            'reference_url' => [],
+            'tags' => [],
+            'date' => ['required'],
         ];
     }
 }

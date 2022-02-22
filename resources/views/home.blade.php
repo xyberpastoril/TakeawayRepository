@@ -15,7 +15,7 @@
         </p>
     </div>
     <div class="mt-3">
-        <a href="{{ route('source.show') }}" class="btn btn-outline-primary">
+        <a href="{{-- route('source.show') --}}" class="btn btn-outline-primary">
             <i class="fa-solid fa-arrow-up-right-from-square"></i>
             Read Full Source
         </a>
@@ -24,7 +24,7 @@
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 mb-5">
     <div class="col">
-        <a href="{{ route('source.show') }}" class="card card-hover h-100">
+        <a href="{{-- route('source.show') --}}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <p class="card-text">This is a wider card card-hover with supporting text below as a natural lead-in to additional
@@ -33,7 +33,7 @@
         </a>
     </div>
     <div class="col">
-        <a href="{{ route('source.show') }}" class="card card-hover h-100">
+        <a href="{{-- route('source.show') --}}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <p class="card-text">This card card-hover has supporting text below as a natural lead-in to additional content.</p>
@@ -41,7 +41,7 @@
         </a>
     </div>
     <div class="col">
-        <a href="{{ route('source.show') }}" class="card card-hover h-100">
+        <a href="{{-- route('source.show') --}}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <p class="card-text">This is a wider card card-hover with supporting text below as a natural lead-in to additional
@@ -68,7 +68,7 @@
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4">
     <div class="col">
-        <a href="{{ route('source.show') }}" class="card card-hover h-100">
+        <a href="{{-- route('source.show') --}}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
@@ -79,7 +79,7 @@
         </a>
     </div>
     <div class="col">
-        <a href="{{ route('source.show') }}" class="card card-hover h-100">
+        <a href="{{-- route('source.show') --}}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
@@ -90,7 +90,7 @@
         </a>
     </div>
     <div class="col">
-        <a href="{{ route('source.show') }}" class="card card-hover h-100">
+        <a href="{{-- route('source.show') --}}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
@@ -101,7 +101,7 @@
         </a>
     </div>
     <div class="col">
-        <a href="{{ route('source.show') }}" class="card card-hover h-100">
+        <a href="{{-- route('source.show') --}}" class="card card-hover h-100">
             <div class="card-body">
                 <h5 class="card-title">Card card-hover title</h5>
                 <span class="badge rounded-pill bg-primary">Example Tag</span>
