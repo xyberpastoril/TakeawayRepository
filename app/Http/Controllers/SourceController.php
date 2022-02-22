@@ -26,7 +26,7 @@ class SourceController extends Controller
      */
     public function index()
     {
-        //
+        return redirect()->route('home');
     }
 
     /**
