@@ -10,6 +10,16 @@ use Illuminate\Support\Facades\Auth;
 class SourceController extends Controller
 {
     /**
+     * Create the controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->authorizeResource(Source::class, 'source');
+    }
+
+    /**
      * Display a listing of the source.
      *
      * @return \Illuminate\Http\Response
