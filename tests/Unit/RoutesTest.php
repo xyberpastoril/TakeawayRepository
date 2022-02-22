@@ -3,9 +3,12 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class RoutesTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * Test whether the homepage is accessible.
      *
@@ -13,7 +16,14 @@ class RoutesTest extends TestCase
      */
     public function test_homepage_access()
     {
-        $response = $this->get('/');
+        $user = \App\Models\User::create([
+            'id' => \Illuminate\Support\Str::uuid(),
+            'email' => 'example@example.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+        ]);
+
+        $response = $this->actingAs($user)
+            ->get('/');
         $response->assertStatus(200);
     }
 
@@ -24,7 +34,15 @@ class RoutesTest extends TestCase
      */
     public function test_source_page_access()
     {
-        $response = $this->get('/source');
+        $user = \App\Models\User::create([
+            'id' => \Illuminate\Support\Str::uuid(),
+            'email' => 'example@example.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+        ]);
+
+        $response = $this->actingAs($user)
+            ->get('/source');
+
         $response->assertStatus(200);
     }
 
@@ -35,8 +53,14 @@ class RoutesTest extends TestCase
      */
     public function test_settings_page_access()
     {
-        // TODO: Update later when auth feature is added.
-        $response = $this->get('/settings');
+        $user = \App\Models\User::create([
+            'id' => \Illuminate\Support\Str::uuid(),
+            'email' => 'example@example.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+        ]);
+
+        $response = $this->actingAs($user)
+            ->get('/settings');
         $response->assertStatus(200);
     }
 }
