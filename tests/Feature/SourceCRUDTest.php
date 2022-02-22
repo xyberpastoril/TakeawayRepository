@@ -36,6 +36,33 @@ class SourceCRUDTest extends TestCase
     }
 
     /**
+     * Test storing of source through POST route with an invalid URL
+     * for `reference_url` field.
+     *
+     * @return void
+     */
+    // public function test_store_source_post_route_invalid_url()
+    // {
+        // $user = \App\Models\User::create([
+        //     'email' => 'example@example.com',
+        //     'password' => \Illuminate\Support\Facades\Hash::make('password'),
+        // ]);
+
+        // $response = $this->actingAs($user)
+        //     ->withHeaders([
+        //         'X-Header' => 'Value',
+        //     ])->post('/source', [
+        //         'title' => 'Test',
+        //         'reference_url' => 'asdjhasjdbasdad',
+        //         'date' => '2022-02-22',
+        //     ]);
+
+        // $response->assertStatus(302);
+        // $response->assertSessionHasErrors();
+        // $this->assertFalse(\App\Models\Source::count() > 0);
+    // }
+
+    /**
      * Test updating of source through PUT route.
      * 
      * @return void 

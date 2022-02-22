@@ -37,7 +37,7 @@ class UpdateSourceRequest extends FormRequest
         return [
             Rule::unique('sources')->ignore($source),
             'title' => ['max:255'],
-            'reference_url' => [],
+            'reference_url' => [/*'url'*/],
             'tags' => [],
             'date' => ['required'],
         ];
