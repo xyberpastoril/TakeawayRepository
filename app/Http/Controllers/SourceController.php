@@ -102,6 +102,10 @@ class SourceController extends Controller
      */
     public function destroy(Source $source)
     {
-        //
+        // Delete existing tags.
+        $source->tags()->delete();
+        $source->delete();
+
+        return redirect()->route('home');
     }
 }

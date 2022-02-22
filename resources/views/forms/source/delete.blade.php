@@ -7,6 +7,8 @@
             </div>
             <div class="modal-body">
                 <form id="form-delete-source" action="" method="post">
+                    @csrf
+                    @method('DELETE')
                     Are you sure you want to delete this source?
                 </form>
             </div>
