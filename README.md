@@ -9,7 +9,7 @@ An application inspired from Deepstash, where you can store your life takeaways 
 ```
 git clone https://github.com/xyberpastoril/TakeawayRepository.git
 ```
-### 2. `cd` into the `pcbms` project
+### 2. `cd` into the `TakeawayRepository` project
 ```
 cd TakeawayRepository
 ```
