@@ -26,7 +26,7 @@ cp .env.example .env
 ```
 php artisan key:generate
 ```
-### 6. Create an empty database named `pcbms`.
+### 6. Create an empty database named `takeaway_repository`.
 This can be done by opening XAMPP, run Apache and MySQL, then create a database to phpMyAdmin.
 ### 7. Update `.env` values when necessary (Optional)
 Just in case your database server's configuration is different from the default `root` and blank password, or the name of the database, you may reflect those changes to the `.env` file.
