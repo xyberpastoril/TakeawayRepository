@@ -16,7 +16,7 @@ class CreateSourcesTable extends Migration
         Schema::create('sources', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('title')->nullable();
             $table->text('reference_url')->nullable();
             $table->date('date');

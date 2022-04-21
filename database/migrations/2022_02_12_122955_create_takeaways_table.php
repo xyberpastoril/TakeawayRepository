@@ -16,7 +16,7 @@ class CreateTakeawaysTable extends Migration
         Schema::create('takeaways', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->uuid('source_id');
+            $table->integer('source_id');
             $table->text('content')->nullable();
             $table->timestamps();
             $table->softDeletes();

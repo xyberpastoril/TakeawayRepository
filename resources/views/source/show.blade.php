@@ -8,10 +8,15 @@
     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modal-edit-source">Edit Source</button>
     <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#modal-delete-source">Delete</button>
     <div class="row mt-1">
-        <p class="section-title-with-subtitle m-0"><b>The quick brown fox jumps over the lazy fat dog</b></p>
+        <p class="section-title-with-subtitle m-0"><b>{{ $title }}</b></p>
         <p>
-            <span class="text-muted">Feb. 12, 2022 | </span>
-            <span class="ml-3 badge rounded-pill bg-primary">Test</span>
+            <span class="text-muted">
+                {{ $date }} 
+                @if(count($tags)) | @endif
+            </span>
+            @foreach($tags as $tag)
+                <span class="ml-3 badge rounded-pill bg-primary">{{ $tag['name'] }}</span>
+            @endforeach
         </p>
     </div>
 </div>
